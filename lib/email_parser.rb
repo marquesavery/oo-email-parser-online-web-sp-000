@@ -13,10 +13,8 @@ class EmailAddressParser
 
   def parse
     split_array = @email_addresses.split(/[," "]/)
-    split_array.delete_if {|s| s == "" }
-
-      # v.strip
-    # end
+    result = split_array.delete_if {|s| s == "" }
+    result.uniq
   end
 
 
