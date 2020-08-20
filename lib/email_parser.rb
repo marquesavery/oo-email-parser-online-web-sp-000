@@ -16,7 +16,7 @@ class EmailAddressParser
     split_array.delete_if {|s| s == "" }
 
       # v.strip
-    end
+    # end
   end
 
 
