@@ -12,7 +12,7 @@ class EmailAddressParser
   end
 
   def parse
-    @email_addresses.split(/, /).collect do |v|
+    @email_addresses.split(/,./).collect do |v|
       v.strip
     end
   end
